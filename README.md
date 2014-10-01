@@ -29,6 +29,8 @@ That means you'll need to:
 1) Write a do-while loop to make sure all 50 Meep Meeps get written in the log.
 2) Use an if statement to ensure that While-y's "YOU'RE CUCKOO" messages happen after every 10 MEEP MEEPs (but starting after the 11th Meep Meep!)
 
+Note: All of your code belongs in the AppDelegate's `application:didFinishLaunchingWithOptions:` method, before `return YES`.
+
 ## Advanced
 
 - While-y has really become quite clever and we don't always manage to flatten him the first time that anvil falls. Let's reflect this in our program by making the number of steps he takes a random number before the anvil hits him. He is allowed to take no more than 100 steps, and the road runner must always take one more step (an extra Meep Meep) than While-y does. (In other words, if While-y takes 100 steps, there should be 101 Meep Meeps to ensure the road runner doesn't get caught.)
