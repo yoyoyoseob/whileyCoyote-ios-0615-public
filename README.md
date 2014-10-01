@@ -27,6 +27,7 @@ So in summary, your output should be 50 "Meep Meeps." in the debugger log with "
 That means you'll need to:
 
 1) Write a do-while loop to make sure all 50 Meep Meeps get written in the log.
+
 2) Use an if statement to ensure that While-y's "YOU'RE CUCKOO" messages happen after every 10 MEEP MEEPs (but starting after the 11th Meep Meep!)
 
 Note: All of your code belongs in the AppDelegate's `application:didFinishLaunchingWithOptions:` method, before `return YES`.
