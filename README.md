@@ -9,7 +9,7 @@ languages: objc
 
 As long as While-y Coyote is following us, we'd like to make sure we keep one step in front of him. And the thing is, While-y is wiley! And all we know is that the anvil we setup to flatten him into the ground won't hit him until he has run 50 steps. Let's keep saying "Meep Meep" until we hit that number.
 
-In order to stay ahead of while-y, we'll need a new type of loop called a do-while loop. A do-while loop runs until a certain condition is met. The syntax for a while loop looks like this:
+In order to stay ahead of while-y, we'll need a new type of loop called a do-while loop. A do-while loop runs until a certain condition is met. The syntax for a do-while loop looks like this:
 
 ```
 do
