@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6C22FE62327F49818ECF9BC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE94BC2910534E2C8399CC08 /* Foundation.framework */; };
 		95F5FF4295604C699AF6F70F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBAE7D30CA3E4BE2A3978C24 /* Images.xcassets */; };
+		A89624FF0F7F60727A6F520C /* libPods-UnitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAC08244D8959DB4E30A29C2 /* libPods-UnitTests.a */; };
 		BA2DC6AF046B4C49A7727791 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A610BC8DB8E407C9585C77A /* main.m */; };
 		D87BE1E5B04C2B6C6091FF9E /* libPods-unit_tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0418B7247B2722F4684BE104 /* libPods-unit_tests.a */; };
 		E03EA6DCD8A94DA995B3117C /* FISAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B801946D6D77464E91644A80 /* FISAppDelegate.m */; };
@@ -34,8 +35,11 @@
 		699F5203A8E0407E8EAB1E8A /* UnitTests-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Prefix.pch"; sourceTree = "<group>"; };
 		72EE023C356B47E6BB41B6C0 /* UnitTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
 		B0D504CE1CDB1F114D0D7154 /* Pods-unit_tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unit_tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-unit_tests/Pods-unit_tests.release.xcconfig"; sourceTree = "<group>"; };
+		B5E31A1A42AA4A6D790B42D5 /* Pods-UnitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UnitTests/Pods-UnitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B801946D6D77464E91644A80 /* FISAppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FISAppDelegate.m; sourceTree = "<group>"; };
 		C8E003810DBD41F389833F52 /* WhileyCoyote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhileyCoyote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAC08244D8959DB4E30A29C2 /* libPods-UnitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UnitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF49F22CEB2F53B8FE4ABC4C /* Pods-UnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnitTests/Pods-UnitTests.release.xcconfig"; sourceTree = "<group>"; };
 		F3DAA11300C342D2B22C7EB2 /* FISAppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FISAppDelegate.h; sourceTree = "<group>"; };
 		FBAE7D30CA3E4BE2A3978C24 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FE94BC2910534E2C8399CC08 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -47,6 +51,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D87BE1E5B04C2B6C6091FF9E /* libPods-unit_tests.a in Frameworks */,
+				A89624FF0F7F60727A6F520C /* libPods-UnitTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +88,8 @@
 			children = (
 				B0D504CE1CDB1F114D0D7154 /* Pods-unit_tests.release.xcconfig */,
 				104C8C45E00A109BD4D48CC0 /* Pods-unit_tests.debug.xcconfig */,
+				CF49F22CEB2F53B8FE4ABC4C /* Pods-UnitTests.release.xcconfig */,
+				B5E31A1A42AA4A6D790B42D5 /* Pods-UnitTests.debug.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -143,6 +150,7 @@
 			children = (
 				10109F42C0264BE394B090F9 /* iOS */,
 				0418B7247B2722F4684BE104 /* libPods-unit_tests.a */,
+				CAC08244D8959DB4E30A29C2 /* libPods-UnitTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -264,7 +272,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-unit_tests/Pods-unit_tests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UnitTests/Pods-UnitTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B54F9EC1DAD38C0F2FBA25CD /* Check Pods Manifest.lock */ = {
@@ -380,7 +388,7 @@
 		};
 		5A50EFD3466144159DA10855 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B0D504CE1CDB1F114D0D7154 /* Pods-unit_tests.release.xcconfig */;
+			baseConfigurationReference = CF49F22CEB2F53B8FE4ABC4C /* Pods-UnitTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WhileyCoyote.app/WhileyCoyote";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -473,7 +481,7 @@
 		};
 		9C0E06AAFBD14B85837C9DC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 104C8C45E00A109BD4D48CC0 /* Pods-unit_tests.debug.xcconfig */;
+			baseConfigurationReference = B5E31A1A42AA4A6D790B42D5 /* Pods-UnitTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WhileyCoyote.app/WhileyCoyote";
 				FRAMEWORK_SEARCH_PATHS = (

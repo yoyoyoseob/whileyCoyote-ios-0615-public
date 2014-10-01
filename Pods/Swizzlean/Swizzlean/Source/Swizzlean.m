@@ -61,7 +61,6 @@
         self.classToSwizzle = swizzleClass;
         self.isClassMethodSwizzled = NO;
         self.isInstanceMethodSwizzled = NO;
-        self.resetWhenDeallocated = YES;
     }
     return self;
 }
@@ -147,21 +146,6 @@
     self.replacementClassMethodImplementation = nil;
     self.currentClassMethodSwizzled = nil;
     self.isClassMethodSwizzled = NO;
-}
-
-- (void)dealloc
-{
-    if (!self.resetWhenDeallocated) {
-        return;
-    }
-    
-    if (self.isInstanceMethodSwizzled) {
-        [self resetSwizzledInstanceMethod];
-    }
-    
-    if (self.isClassMethodSwizzled) {
-        [self resetSwizzledClassMethod];
-    }
 }
 
 @end
