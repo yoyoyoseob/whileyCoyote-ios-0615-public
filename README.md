@@ -11,6 +11,7 @@ As long as While-y Coyote is following us, we'd like to make sure we keep one st
 
 In order to stay ahead of while-y, we'll need a new type of loop called a do-while loop. A do-while loop runs until a certain condition is met, and the key is, it is always run once, because the code inside the brackets comes before the logic (after the word while). The syntax for a while loop looks like this:
 
+
 ```
 do
 {
@@ -27,7 +28,9 @@ So in summary, your output should be 51 "Meep Meeps." in the debugger log with "
 That means you'll need to:
 
 1) Write a do-while loop to make sure all 51 Meep Meeps get written in the log.
+
 2) Use an if statement to ensure that While-y's "YOU'RE CUCKOO" messages gets written to the log after every 10 MEEP MEEPs (but starting after the 11th Meep Meep!)
+
 
 Note: All of your code belongs in the AppDelegate's `application:didFinishLaunchingWithOptions:` method, before `return YES`.
 
