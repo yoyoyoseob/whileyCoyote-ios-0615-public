@@ -13,6 +13,22 @@
 @implementation FISAppDelegate
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    NSInteger stepCounter = 1;
+    
+    // Cuckoo at 12, 23, 34, 45
+    do {
+        NSLog(@"Meep Meeps");
+        stepCounter ++;
+        
+        if (stepCounter == 12 || stepCounter == 23 || stepCounter == 34 || stepCounter == 45){
+            NSLog(@"YOU'RE CUCKOO");
+//            stepCounter ++;
+        }
+    } while (stepCounter < 52);
+    
+    // NSLog(@"Meep Meeps printed %lu times", stepCounter);
+    
     return YES;
 }
 
